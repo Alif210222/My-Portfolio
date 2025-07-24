@@ -1,8 +1,24 @@
 import React from 'react';
 
 const Navbar = () => {
+
+const links = <>
+
+        <li  className='  text-white    lg:mr-3 border-0 rounded text-[15px] font-medium hover:bg-[#b66780]'><a href="" >Home </a></li> 
+        <li  className='  text-white    lg:mr-3 border-0 rounded text-[15px] font-medium hover:bg-[#b66780]'><a href="">About </a></li> 
+        <li  className='  text-white    lg:mr-3 border-0 rounded text-[15px] font-medium hover:bg-[#b66780]'><a href="">Skills </a></li> 
+        <li  className='  text-white    lg:mr-3 border-0 rounded text-[15px] font-medium hover:bg-[#b66780]'><a href="">Project </a></li> 
+        <li  className='  text-white    lg:mr-3 border-0 rounded text-[15px] font-medium hover:bg-[#b66780]'><a href="">Education </a></li> 
+        <li  className='  text-white    lg:mr-3 border-0 rounded text-[15px] font-medium hover:bg-[#b66780]'><a href="">Contact </a></li> 
+
+
+</>
+         
+
+
+
     return (
-        <div className="navbar bg-[#21252a] shadow-sm border border-white">
+        <div className="navbar bg-[#21252a]   border-b-2 border-[#943452]  p-2  px-2 md:px-16">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -11,36 +27,22 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+       {
+        links
+       }
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-3xl font-bold">Alif<span className='text-[#ff0251]'>Pro</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
+     {
+      links
+     }
     </ul>
   </div>
   <div className="navbar-end ">
-    <button className="btn bg-[#ff0251]">Download My Resume</button>
+    <button className="btn bg-[#ff0251]">Download Resume</button>
   </div>
 </div>
     );
