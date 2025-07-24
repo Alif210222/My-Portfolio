@@ -18,9 +18,9 @@ const ContactCard = () => {
         </div> */}
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-5">
+        <div className="flex justify-center gap-5 ">
           <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="text-3xl text-gray-800 hover:text-black transition" title="GitHub" />
+            <FaGithub className="text-3xl text-gray-800 hover:text-black transition " title="GitHub" />
           </a>
           <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-3xl text-blue-700 hover:text-blue-800 transition" title="LinkedIn" />

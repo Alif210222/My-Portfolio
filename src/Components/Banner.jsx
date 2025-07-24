@@ -16,7 +16,11 @@ const Banner = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1> <>Hello World</>  </h1>
+        <p class=" font-mono text-2xl mb-4 ">
+ 
+          <> Hello World  </> 
+           
+        </p>
 
 
         <h1 className="text-4xl md:text-5xl font-extrabold  mb-4 leading-tight">
@@ -33,7 +37,7 @@ const Banner = () => {
           </span>
         </h1>
 
-        <p className="text-xl text-gray-400 mb-6 mt-10 px-4 md:px-0" >
+        <p className="text-xl text-gray-400 mb-4 mt-10 px-4 md:px-0" >
           I build fast, scalable and fully modern <span className='text-xl font-medium '> responsive</span> web applications using <span className='text-xl font-medium text-[#f7145c]'>MongoDB</span> ,<span className='text-xl font-medium text-[#f7145c]'> Express</span> ,<span className='text-xl font-medium text-[#f7145c]'> React</span> and  <span className='text-xl font-medium text-[#f7145c]'>Node.js</span>.
           Passionate about UI/UX, APIs, and full-stack development.
         </p>
@@ -42,7 +46,7 @@ const Banner = () => {
           href="#projects"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-block bg-[#ff0251] text-white px-6 py-3 rounded-xl mt-4 shadow-md hover:bg-[#e37f9f] transition"
+          className="inline-block bg-gradient-to-br from-[#e00d56] via-[#c75478] to-[#d37ea7] text-white px-6 py-3 font-medium rounded-xl mb-8   hover:bg-[#e37f9f] transition"
         >
           View Projects
         </motion.a>
@@ -90,6 +94,7 @@ const Banner = () => {
         >
           <img
             src="https://i.ibb.co/JwDdM1sT/user-2.jpg"
+            // src="https://i.ibb.co/d4KqbRwM/my-profile.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
