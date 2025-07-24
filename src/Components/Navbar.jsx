@@ -42,7 +42,7 @@ const links = <>
     </ul>
   </div>
   <div className="navbar-end ">
-    <button className="btn bg-[#ff0251]">Download Resume</button>
+    <button className="btn bg-[#ff0251] hover:bg-[#e37f9f] transition ">Download Resume</button>
   </div>
 </div>
     );
