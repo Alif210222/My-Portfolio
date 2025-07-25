@@ -6,7 +6,7 @@ import ContactCard from './ContactComponent';
 
 const Banner = () => {
   return (
-    <div className="w-full mt-20 px-10 md:px-16 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-20 md:gap-34">
+    <div className="w-full mt-20 px-10 md:px-20 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-20 md:gap-34">
       
 
       {/* LEFT: Description */}
@@ -73,7 +73,7 @@ const Banner = () => {
 
       {/* RIGHT: Image with background card */}
       <motion.div
-        className="md:w-1/2 relative flex justify-center items-center"
+        className="md:w-1/2 relative flex justify-center items-center md:ml-20"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
