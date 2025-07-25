@@ -5,7 +5,7 @@ import { SiReact, SiNodedotjs, SiExpress, SiMongodb, SiTailwindcss,SiJavascript 
 
 const About = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16 mt-8 flex flex-col md:flex-row gap-18 items-start">
+    <div className="max-w-7xl mx-auto px-6 py-16 mt-8 flex flex-col-reverse  md:flex-row md:gap-18 items-start">
 
       {/* Left Side - Skill List */}
       <motion.ul
@@ -18,7 +18,7 @@ const About = () => {
         <li className="bg-pink-100 p-3 rounded-lg shadow-sm">📱 App Development</li>
         <li className="bg-pink-100 p-3 rounded-lg shadow-sm">🛠️ Debugging</li>
         <li className="bg-pink-100 p-3 rounded-lg shadow-sm">💻 Problem Solving</li>
-                <li className="bg-pink-100 p-3 rounded-lg shadow-sm">☁️ Website Hosting</li>
+        <li className="bg-pink-100 p-3 rounded-lg shadow-sm">☁️ Website Hosting</li>
 
 
     {/* Rainbow Colored Tech Stack Icons */}
