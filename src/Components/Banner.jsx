@@ -93,8 +93,8 @@ const Banner = () => {
           transition={{ type: "spring", stiffness: 200 }}
         >
           <img
-            src="https://i.ibb.co/JwDdM1sT/user-2.jpg"
-            // src="https://i.ibb.co/d4KqbRwM/my-profile.jpg"
+            // src="https://i.ibb.co/JwDdM1sT/user-2.jpg"
+            src="https://i.ibb.co/d4KqbRwM/my-profile.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
           />

@@ -18,7 +18,7 @@ import {
 import { useInView } from 'react-intersection-observer';
 
 const skills = [
-  { icon: <SiHtml5 className="text-orange-500 text-4xl mb-3 mx-auto" />, name: 'HTML5', percent: 95 },
+  { icon: <SiHtml5 className="text-orange-500 text-4xl mb-3 mx-auto" />, name: 'HTML5', percent: 100 },
   { icon: <SiCss3 className="text-blue-500 text-4xl mb-3 mx-auto" />, name: 'CSS3', percent: 90 },
   { icon: <SiJavascript className="text-yellow-400 text-4xl mb-3 mx-auto" />, name: 'JavaScript', percent: 90 },
   { icon: <SiReact className="text-blue-400 text-4xl mb-3 mx-auto" />, name: 'React', percent: 90 },
@@ -50,7 +50,7 @@ const TechnicalExpertise = () => {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {skills.map((skill, index) => {
           const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
@@ -61,17 +61,17 @@ const TechnicalExpertise = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl shadow-lg p-6 text-center"
+              className="bg-gradient-to-r from-[#9a9999] to-[#d7d6d6] rounded-xl shadow-lg p-6 border-2 border-gray-400 text-center hover:border-2 hover:border-[#f92a72]   hover:shadow-[#f92a72]"
             >
               {skill.icon}
               <h3 className="text-lg font-semibold text-gray-800 mb-2">{skill.name}</h3>
-              <div className="w-full bg-gray-300 rounded-full h-2">
+              <div className="w-full bg-white rounded-full h-2">
                 <div
-                  className="bg-[#f40450] h-2 rounded-full"
+                  className="bg-[#3b3738] h-2 rounded-full"
                   style={{ width: `${skill.percent}%` }}
                 ></div>
               </div>
-              <p className="text-sm text-gray-600 mt-2">{skill.percent}%</p>
+              <p className=" text-gray-800 mt-2">{skill.percent}%</p>
             </motion.div>
           );
         })}
