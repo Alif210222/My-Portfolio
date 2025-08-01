@@ -30,19 +30,19 @@ const Contact = () => {
           {/* Email */}
           <div className="bg-white rounded-xl shadow-md p-5 flex items-center gap-4">
             <FaEnvelope className="text-[#f40450] text-2xl" />
-            <a href='' className="text-gray-700">alifsarkerrony@gmail.com</a>
+            <p  className="text-gray-700">alifsarkerrony@gmail.com</p>
           </div>
 
           {/* Phone */}
           <div className="bg-white rounded-xl shadow-md p-5 flex items-center gap-4">
             <FaPhoneAlt className="text-[#f40450] text-2xl" />
-            <p className="text-gray-700">+8801XXXXXXXXX</p>
+            <p className="text-gray-700">+8801580620803</p>
           </div>
 
           {/* WhatsApp */}
           <div className="bg-white rounded-xl shadow-md p-5 flex items-center gap-4">
             <FaWhatsapp className="text-green-500 text-2xl" />
-            <p className="text-gray-700">+8801XXXXXXXXX</p>
+            <p className="text-gray-700">+8801994677977</p>
           </div>
 
       

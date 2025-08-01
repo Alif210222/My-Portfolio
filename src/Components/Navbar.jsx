@@ -32,7 +32,7 @@ const links = <>
        }
       </ul>
     </div>
-    <a className="btn btn-ghost text-3xl font-bold">Alif<span className='text-[#ff0251]'>Pro</span></a>
+    <a className="btn btn-ghost text-3xl font-bold">Alif<span className='text-[#ff0251]'>Web</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

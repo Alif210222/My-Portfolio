@@ -6,15 +6,17 @@ import TechnicalExpertise from '../Components/TecnicalExpertComponent';
 import AcademicJourney from '../Components/AcademicJourney';
 import Footer from '../Components/Footer';
 import Contact from '../Components/Contact';
+import MyProjects from '../Components/Projects';
 
 const Homepage = () => {
     return (
-        <div className='bg-[#21252a] min-h-screen '>
+        <div className='bg-[#010215] min-h-screen '>
             <Navbar></Navbar>
             <div className='max-w-8xl mx-auto'>
                <Banner></Banner>
                <About></About>
                <TechnicalExpertise></TechnicalExpertise>
+               <MyProjects></MyProjects>
                <AcademicJourney></AcademicJourney>
                <Contact></Contact>
                <Footer></Footer>
