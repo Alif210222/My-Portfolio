@@ -3,7 +3,7 @@ import { FaGraduationCap, FaUniversity, FaSchool, FaTrophy, FaUsers, FaCheckCirc
 
 const AcademicJourney = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 mt-16">
+    <div id='academic' className="max-w-4xl mx-auto px-6 py-8 md:py-12 mt-12">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -20,8 +20,8 @@ const AcademicJourney = () => {
       <div className="space-y-8">
         {/* University */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+           initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
           className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 border-l-4 border-pink-400 hover:border-gradient-to-r from-pink-400 to-yellow-400 transform hover:scale-105 transition-all duration-300"
@@ -30,14 +30,14 @@ const AcademicJourney = () => {
           <div>
             <h3 className="text-xl text-black font-semibold">B.Sc in Computer Science & Engineering</h3>
             <p className="text-gray-600">Currently studying in 3rd Year <span className='text-[#f40450] font-medium'> ( With full Scholarship )</span></p>
-            <p className="text-gray-700 font-medium">Current CGPA: 3.79</p>
+            <p className="text-gray-700 font-medium">Current CGPA: 3.79 out of 4</p>
           </div>
         </motion.div>
 
         {/* College */}
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+           initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 border-l-4 border-pink-400 hover:border-gradient-to-r from-pink-400 to-yellow-400 transform hover:scale-105 transition-all duration-300"
@@ -46,7 +46,7 @@ const AcademicJourney = () => {
           <div>
             <h3 className="text-xl text-black font-semibold">Higher Secondary Certificate (HSC)</h3>
             <p className="text-gray-600">Rajuk Uttara Model College</p>
-            <p className="text-gray-700 font-medium">GPA: 5.00</p>
+            
           </div>
         </motion.div>
 

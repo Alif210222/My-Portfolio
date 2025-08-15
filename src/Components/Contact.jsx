@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhoneAlt, FaWhatsapp, FaLinkedin, FaTwitter, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaWhatsapp, FaLinkedin, FaTwitter, FaInstagram, FaMapMarkerAlt,FaGithub } from 'react-icons/fa';
+import Contact_Form from './Contact-Form';
 
 const Contact = () => {
   return (
-    <div className="max-w-6xl mt-14 mx-auto px-6 py-16">
+    <div id='contact' className="max-w-6xl mt-12 mx-auto px-6 py-8 md:py-12">
       {/* Section Title */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -21,8 +22,8 @@ const Contact = () => {
       <div className="grid md:grid-cols-2 gap-10 items-start">
         {/* Left Side - Contact Info */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+         initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="space-y-5"
@@ -57,15 +58,15 @@ const Contact = () => {
          <div className='flex items-center gap-4'>
           <p className='text-xl font-medium'>Find Me in: </p>
            <div className="bg-[#f0ecec] rounded-xl w-60 shadow-md p-5 flex items-center justify-center gap-8">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/alif-sarker-rony-aa50802a7/" target="_blank" rel="noreferrer">
               <FaLinkedin className="text-blue-600 text-2xl hover:scale-110 transition" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a href="https://x.com/AlifSarkerRony1" target="_blank" rel="noreferrer">
               <FaTwitter className="text-sky-500 text-2xl hover:scale-110 transition" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
-              <FaInstagram className="text-pink-500 text-2xl hover:scale-110 transition" />
-            </a>
+             <a href="https://github.com/Alif210222" target="_blank" rel="noopener noreferrer">
+                        <FaGithub className="text-3xl text-gray-800 hover:text-black transition " title="GitHub" />
+                      </a>
           </div>
          </div>
 
@@ -77,46 +78,15 @@ const Contact = () => {
 
         {/* Right Side - Contact Form */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+         initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="bg-white/10 p-6 rounded-xl shadow-md"
         >
-          <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            {/* form component  */}
+             <Contact_Form></Contact_Form>
 
-            <input
-              type="text"
-              name="name"
-              required
-              placeholder="Your Name"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-3 focus:ring-pink-400"
-            />
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Your Email"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-3 focus:ring-pink-400"
-            />
-            <textarea
-              name="message"
-              required
-              placeholder="Your Message"
-              rows="5"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-3 focus:ring-pink-400"
-            ></textarea>
-
-            <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
-
-            <button
-              type="submit"
-              className="bg-[#f40450] text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition"
-            >
-              Submit Form
-            </button>
-          </form>
         </motion.div>
       </div>
     </div>

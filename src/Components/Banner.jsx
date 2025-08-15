@@ -6,7 +6,7 @@ import ContactCard from './ContactComponent';
 
 const Banner = () => {
   return (
-    <div className="w-full mt-20 px-10 md:px-20 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-20 md:gap-34">
+    <div id='banner' className="w-full mt-20 px-10 md:px-20 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-16 ">
       
 
       {/* LEFT: Description */}
@@ -16,18 +16,18 @@ const Banner = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <p class=" font-mono text-2xl mb-4 ">
+        {/* <p class=" font-mono text-2xl mb-4 ">
  
           <> Hello World  </> 
            
-        </p>
+        </p> */}
 
 
-        <h1 className="text-4xl md:text-5xl font-extrabold  mb-4 leading-tight">
-          Hi, I’m Alif Sarker <span className="text-[#f40450] text-3xl font-mono ">
+        <h1 className="text-2xl md:text-2xl lg:text-5xl font-extrabold  mb-3  leading-tight">
+          Hi, I’m Alif Sarker <span className="text-[#f40450] text-[17px]  mt-3 lg:text-3xl  font-mono ">
             <Typewriter
               options={{
-                strings: ['a MERN Stack Developer', 'a React Expert', 'a Node.js Enthusiast', 'a MongoDB Builder'],
+                strings: ['MERN stack Developer', ' React Expert', ' Node.js Enthusiast', ' MongoDB Builder'],
                 autoStart: true,
                 loop: true,
                 delay: 60,
@@ -37,19 +37,30 @@ const Banner = () => {
           </span>
         </h1>
 
-        <p className="text-xl text-gray-400 mb-4 mt-10 px-4 md:px-0" >
-          I build fast, scalable and fully modern <span className='text-xl font-medium '> responsive</span> web applications using <span className='text-xl font-medium text-[#f7145c]'>MongoDB</span> ,<span className='text-xl font-medium text-[#f7145c]'> Express</span> ,<span className='text-xl font-medium text-[#f7145c]'> React</span> and  <span className='text-xl font-medium text-[#f7145c]'>Node.js</span>.
+        <p className="  text-sm  lg:text-xl  text-gray-400 mb-4 mt-7 px-4 md:px-0" >
+          I build fast, scalable and fully modern  responsive web applications using <span className='  lg:text-xl font-medium text-[#f7145c]'>MongoDB</span> ,<span className='lg:text-xl font-medium text-[#f7145c]'> Express</span> ,<span className='lg:text-xl font-medium text-[#f7145c]'> React</span> and  <span className='lg:text-xl font-medium text-[#f7145c]'>Node.js</span>.
           Passionate about UI/UX, APIs, and full-stack development.
         </p>
 
         <motion.a
-          href="#projects"
+        href='../../public/My Resume.pdf'
+        download="Alif's_Resume.pdf"     
+        target="_blank" rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-block bg-gradient-to-br from-[#e00d56] via-[#c75478] to-[#d37ea7] text-white px-6 py-3 font-medium rounded-xl mb-8   hover:bg-[#e37f9f] transition"
+          className="inline-block cursor-pointer bg-gradient-to-br from-[#e00d56] via-[#c75478] to-[#da5093] text-white px-3 lg:px-6 py-3 font-medium rounded-xl mt-3 mb-8   hover:bg-[#e37f9f] transition"
         >
-          View Projects
+          Download Resume
         </motion.a>
+
+
+        {/* <a
+      href='../../public/My Resume.pdf'
+      download="Alif's_Resume.pdf"     
+      target="_blank" rel="noopener noreferrer"
+      className="btn bg-[#ff0251] hover:bg-[#e37f9f] transition  font-medium">
+      Download Resume
+      </a> */}
 
 
         {/* // contact component  */}
@@ -80,7 +91,7 @@ const Banner = () => {
       >
         {/* Background Card */}
         <motion.div
-          className="w-72 h-96 bg-gradient-to-br from-[#0e0e0e] to-[#505052]  rounded-3xl shadow-xl shadow-[#e13169] absolute top-8 left-8 z-0 "
+          className="hidden lg:flex   w-72 h-96 bg-gradient-to-br from-[#0e0e0e] to-[#505052]  rounded-3xl shadow-xl shadow-[#e13169] absolute top-8 left-8 z-0 "
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -94,7 +105,8 @@ const Banner = () => {
         >
           <img
             // src="https://i.ibb.co/JwDdM1sT/user-2.jpg"
-            src="https://i.ibb.co/d4KqbRwM/my-profile.jpg"
+            // src="https://i.ibb.co/d4KqbRwM/my-profile.jpg"
+            src="https://i.ibb.co.com/3yYcrbBp/profile-final.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
