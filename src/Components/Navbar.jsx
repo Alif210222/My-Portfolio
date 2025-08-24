@@ -42,8 +42,8 @@ const links = <>
   </div>
   <div className="navbar-end ">
     <a
-      href='../../public/My Resume.pdf'
-      download="Alif's_Resume.pdf"     
+      href='/resumepro.pdf'
+      download="Alif's_Resume"     
       target="_blank" rel="noopener noreferrer"
       className="btn bg-[#ff0251] hover:bg-[#e37f9f] transition  font-medium">
       Download Resume

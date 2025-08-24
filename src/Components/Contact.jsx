@@ -66,7 +66,7 @@ const Contact = () => {
             </a>
              <a href="https://github.com/Alif210222" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="text-3xl text-gray-800 hover:text-black transition " title="GitHub" />
-                      </a>
+              </a>
           </div>
          </div>
 

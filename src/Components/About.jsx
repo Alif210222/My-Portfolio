@@ -55,17 +55,17 @@ const About = () => {
           </div>
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:bg-[#f6cae2]  transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">
             <FaCheckCircle className="text-3xl text-green-500 mb-2 mx-auto hidden lg:flex" />
-            <h3 className="text-2xl text-gray-900 font-bold">17+</h3>
+            <h3 className="text-2xl text-gray-900 font-bold">7+</h3>
             <p className="text-gray-600">Completed Projects</p>
           </div>
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:bg-[#f6cae2]  transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">
             <FaClock className="text-3xl text-yellow-500 mb-2 mx-auto hidden lg:flex" />
-            <h3 className="text-2xl text-gray-900 font-bold">3+</h3>
+            <h3 className="text-2xl text-gray-900 font-bold">1+</h3>
             <p className="text-gray-600">Pending Projects</p>
           </div>
           <div className="bg-white rounded-xl shadow-md p-6 text-center hover:bg-[#f6cae2]  transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">
             <FaSmile className="text-3xl text-blue-400 mb-2 mx-auto hidden lg:flex" />
-            <h3 className="text-2xl text-gray-900 font-bold">35+</h3>
+            <h3 className="text-2xl text-gray-900 font-bold">20+</h3>
             <p className="text-gray-600">Client Reviews</p>
           </div>
           <div className= " hidden  bg-white rounded-xl shadow-md p-6 text-center hover:bg-[#f6cae2]  transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">

@@ -38,13 +38,13 @@ const Banner = () => {
         </h1>
 
         <p className="  text-sm  lg:text-xl  text-gray-400 mb-4 mt-7 px-4 md:px-0" >
-          I build fast, scalable and fully modern  responsive web applications using <span className='  lg:text-xl font-medium text-[#f7145c]'>MongoDB</span> ,<span className='lg:text-xl font-medium text-[#f7145c]'> Express</span> ,<span className='lg:text-xl font-medium text-[#f7145c]'> React</span> and  <span className='lg:text-xl font-medium text-[#f7145c]'>Node.js</span>.
+          I build fast, scalable and fully modern  responsive web applications using <span className='  lg:text-xl font-medium text-[#f7145c]'>MongoDB</span> ,<span className='lg:text-xl font-medium text-[#f7145c]'> Express.js</span> ,<span className='lg:text-xl font-medium text-[#f7145c]'> React.js</span> and  <span className='lg:text-xl font-medium text-[#f7145c]'>Node.js</span>.
           Passionate about UI/UX, APIs, and full-stack development.
         </p>
 
         <motion.a
-        href='../../public/My Resume.pdf'
-        download="Alif's_Resume.pdf"     
+        href='/resumepro.pdf'
+        download="Alif's_Resume"     
         target="_blank" rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
